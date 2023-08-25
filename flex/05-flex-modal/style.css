@@ -15,7 +15,35 @@ body {
   justify-content: center;
 }
 
+.modal,
+.confirm-buttons,
+.you-sure,
+.big-text {
+  display: flex;
+  gap: 13px;
+}
+
+.big-text {
+  flex-direction: column;
+}
+
+.you-sure {
+  justify-content: space-between;
+}
+
+.header, .icon {
+  flex-shrink: 0;
+}
+
+.header {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 .modal {
+  gap:15px;
+  padding: 14px;
+
   background: white;
   width: 480px;
   border-radius: 10px;
