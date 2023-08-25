@@ -11,10 +11,73 @@ img {
   width: 600px;
 }
 
+/* Give basic flexbox propperties to body, .footer, .header and their links */
+body,
+.content,
+.header,
+.footer,
+.left-links,
+.right-links
+{
+  display: flex;
+}
+/**/
+.left-links,
+.right-links {
+  gap: 25px;
+}
+
+/* Apply column direction to body and .content */
+body,
+.content{
+  flex-direction: column;
+}
+/**/
+/* Apply center alignment to content */
+.content {
+  align-items: center;
+}
+/**/
+/* Separate buttons in header and footer */
+.header,
+.footer,
+body {
+  justify-content: space-between;
+}
+/**/
+
+/* Remove text decorations and formatting from links and lists */
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/**/
+
+/* Add padding to buttons, footer and header */
+button,
+.footer,
+.header {
+  padding: 8px;
+}
+/**/
+/* Apply background color to footer */
+.footer {
+  background-color: #eee;
+}
+/**/
+
 button {
+  /* Add padding to buttons */
+  padding: 8px;
+  /**/
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #eee;
 }
 
