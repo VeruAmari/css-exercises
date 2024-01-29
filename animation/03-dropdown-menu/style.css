@@ -26,7 +26,20 @@ ul.dropdown-menu li:hover {
 }
 
 .visible {
+  transform-origin: top;
+  animation-name: showUp;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
   display: block;
 }
-
-
+@keyframes showUp {
+  from {
+    transform: scale(100%, 0);
+  }
+  50% {
+    transform: scale(100%, 105%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
